@@ -13,4 +13,5 @@ RUN ./gradlew build
 FROM openjdk:11-jdk-slim
 WORKDIR /app
 COPY --from=builder /app/build/libs/accessing-data-rest-0.0.1-SNAPSHOT.jar .
+EXPOSE 80
 ENTRYPOINT ["java", "-jar", "accessing-data-rest-0.0.1-SNAPSHOT.jar"]
