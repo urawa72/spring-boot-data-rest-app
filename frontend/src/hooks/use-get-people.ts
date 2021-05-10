@@ -23,7 +23,6 @@ const useGetPeople = (): GetPeopleState => {
     (async () => {
       try {
         const res = await axios.get(`/api/people`);
-        console.log(res);
         setState({
           ...state,
           loading: false,

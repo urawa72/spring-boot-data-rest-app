@@ -42,7 +42,7 @@ export class EcsAppStack extends cdk.Stack {
         dockerLabels: { app: 'spring-boot-react-app' },
         logging: ecs.LogDrivers.awsLogs({ streamPrefix: 'App' }),
       })
-      .addPortMappings({ containerPort: 80 });
+      .addPortMappings({ containerPort: 8080 });
 
     const appService = new ecsPatterns.ApplicationLoadBalancedEc2Service(
       this,
