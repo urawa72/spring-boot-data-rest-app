@@ -1,5 +1,15 @@
 # spring-boot-react-app
 
+## Run at local
+
+```
+$ cd frontend
+$ yarn build
+$ cd ..
+$ ./gradlew bootRun
+# access localhost:8080
+```
+
 ## Deploy to AWS
 
 Create ECR repogitory
