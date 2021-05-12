@@ -1,4 +1,4 @@
-# spring-boot-react-app
+# spring-boot-data-rest-app
 
 ## Run at local
 
